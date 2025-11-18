@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="docker-compose.yaml" />
+  </Folder>
+  <Project Path="DataAccessAPI.Api/DataAccessAPI.Api.csproj" />
+  <Project Path="DataAccessAPI.Application/DataAccessAPI.Application.csproj" />
+  <Project Path="DataAccessAPI.Domain/DataAccessAPI.Domain.csproj" />
+  <Project Path="DataAccessAPI.Infrastructure/DataAccessAPI.Infrastructure.csproj" />
+</Solution>

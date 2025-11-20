@@ -2,8 +2,16 @@
   <Folder Name="/Solution Items/">
     <File Path="docker-compose.yaml" />
   </Folder>
-  <Project Path="DataAccessAPI.Api/DataAccessAPI.Api.csproj" />
-  <Project Path="DataAccessAPI.Application/DataAccessAPI.Application.csproj" />
-  <Project Path="DataAccessAPI.Domain/DataAccessAPI.Domain.csproj" />
-  <Project Path="DataAccessAPI.Infrastructure/DataAccessAPI.Infrastructure.csproj" />
+  <Folder Name="/src/">
+    <Project Path="DataAccessAPI.Api/DataAccessAPI.Api.csproj" />
+    <Project Path="DataAccessAPI.Application/DataAccessAPI.Application.csproj" />
+    <Project Path="DataAccessAPI.Domain/DataAccessAPI.Domain.csproj" />
+    <Project Path="DataAccessAPI.Infrastructure/DataAccessAPI.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="DataAccessAPI.Api.Tests/DataAccessAPI.Api.Tests.csproj" Id="f985b59d-b18e-4ea4-922c-b2cf9f69d611" />
+    <Project Path="DataAccessAPI.Application.Tests/DataAccessAPI.Application.Tests.csproj" Id="0b086612-05b8-4414-9f14-ad6ea363f18e" />
+    <Project Path="DataAccessAPI.Infrastructure.Tests/DataAccessAPI.Infrastructure.Tests.csproj" Id="efea6efb-65fe-4071-aecd-3482ab244bc0" />
+    <Project Path="TestingCourse/TestingCourse.csproj" Id="a62ad0c6-5cdd-4b65-a924-6deb8e7c8472" />
+  </Folder>
 </Solution>

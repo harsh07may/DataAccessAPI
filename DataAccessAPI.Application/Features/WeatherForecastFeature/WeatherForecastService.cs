@@ -1,11 +1,9 @@
-﻿using Microsoft.Extensions.Logging;
-namespace DataAccessAPI.Application.Features.WeatherForecastFeature;
-
-/* Plan:
+﻿/* Plan:
  * Create a IApplicationDbContext within Application/Interfaces, register it Infrastructure/DependencyInjection.cs. 
  * With this we get rid of the unneccessary IRepository<T> abstraction 
  * & use EF Core directly within the Service layer.
  */
+namespace DataAccessAPI.Application.Features.WeatherForecastFeature;
 public class WeatherForecastService : IWeatherForecastService
 {
     private readonly IAppDbContext _context;

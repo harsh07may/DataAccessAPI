@@ -1,8 +1,11 @@
 /* Plan:
- - Move top-level statements to proper methods
- -      1) CreateWebApplication(string[] args) 
- -      2) ConfigureAndRunApp(WebApplication app)
- -  Add SwaggerUI and point it to openapi and update launchsettings.json
+ * 
+ *  Move top-level statements to proper methods
+ *      1) CreateWebApplication(string[] args) 
+ *      2) ConfigureAndRunApp(WebApplication app)
+ *  Add SwaggerUI and point it to openapi and update launchsettings.json
+ * 
+ *  In .NET 10, The Program class is always public, so no need to declare it.
 */
 
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;

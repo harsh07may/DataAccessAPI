@@ -56,6 +56,7 @@ public class WeatherForecastService : IWeatherForecastService
     {
         var entity = new WeatherForecast
         {
+            Id = Guid.NewGuid(),
             Date = createDto.Date,
             TemperatureC = createDto.TemperatureC,
             Summary = createDto.Summary

@@ -11,8 +11,8 @@ public class WeatherForecastConfiguration : IEntityTypeConfiguration<WeatherFore
         // Configure DB-side default for GUIDs on SQL Server:
         // This creates a DEFAULT constraint: NEWSEQUENTIALID()
         // EF Core will populate the Id after SaveChangesAsync().
-        builder.Property(e => e.Id)
-               .HasDefaultValueSql("NEWSEQUENTIALID()");
+        //builder.Property(e => e.Id)
+        //       .HasDefaultValueSql("NEWSEQUENTIALID()");
 
     }
 }

@@ -8,6 +8,7 @@
  *  In .NET 10, The Program class is always public, so no need to declare it.
 */
 
+using DataAccessAPI.Api.Services;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Serilog;
 
@@ -26,7 +27,11 @@ WebApplication CreateWebApplication(string[] args)
         .AddCheck<LivenessHealthCheck>("self")
         .AddCheck<ReadinessHealthCheck>("readiness");
 
+    // Register HttpContextAccessor for accessing User Claims.
+    builder.Services.AddHttpContextAccessor();
+
     // Add services to the container.
+    builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
     builder.Services.AddInfrastructure(builder.Configuration);
     builder.Services.AddApplication();
 

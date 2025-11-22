@@ -16,8 +16,6 @@
  *	TODO: Write Unit tests for the actual WEB APIs next.
  */
 
-using NSubstitute;
-using TestingCourse.Pokecenter;
 
 namespace TestingCourse.PokemonService;
 

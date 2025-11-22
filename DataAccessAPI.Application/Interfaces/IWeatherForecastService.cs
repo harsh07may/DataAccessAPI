@@ -1,9 +1,4 @@
-﻿// Major TIL: Just appending a semi-colon at the end of the braces style namespace auto-converts it lol.
-
-using DataAccessAPI.Application.Features.WeatherForecastFeature;
-using DataAccessAPI.Domain.Entities;
-
-namespace DataAccessAPI.Application.Interfaces;
+﻿namespace DataAccessAPI.Application.Interfaces;
 
 public interface IWeatherForecastService
 {

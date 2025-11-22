@@ -1,10 +1,4 @@
-﻿using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.Data.SqlClient;
-
-using Testcontainers.MsSql;
-
-namespace DataAccessAPI.Api.Tests;
+﻿namespace DataAccessAPI.Api.Tests;
 
 public class CustomWebApplicationFactory : WebApplicationFactory<Program>, IAsyncLifetime
 {

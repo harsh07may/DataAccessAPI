@@ -1,4 +1,3 @@
-
 using Microsoft.AspNetCore.Mvc;
 
 namespace DataAccessAPI.Api.Controllers;
@@ -22,10 +21,6 @@ public class WeatherForecastController : ControllerBase
     /// Gets all weather forecasts.
     /// </summary>
     /// <returns>List of weather forecasts</returns>
-    
-    
-    
-    
     
     [HttpGet]
     public async Task<ActionResult<IEnumerable<WeatherForecastDto>>> GetAll(CancellationToken token)

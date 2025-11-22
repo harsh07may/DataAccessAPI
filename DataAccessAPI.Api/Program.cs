@@ -9,6 +9,7 @@
 */
 
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Serilog;
 
 var app = CreateWebApplication(args);
 await ConfigureAndRunApp(app);
@@ -16,6 +17,9 @@ await ConfigureAndRunApp(app);
 WebApplication CreateWebApplication(string[] args)
 {
     var builder = WebApplication.CreateBuilder(args);
+
+    LoggingConfiguration.ConfigureSerilog(builder.Configuration, builder.Environment);
+    builder.Host.UseSerilog();
 
     // Health checks
     builder.Services.AddHealthChecks()
@@ -35,6 +39,7 @@ WebApplication CreateWebApplication(string[] args)
 Task ConfigureAndRunApp(WebApplication app)
 {
     app.UseExceptionHandler();
+    app.UseSerilogRequestLogging();
 
     if (app.Environment.IsDevelopment())
     {

@@ -1,5 +1,4 @@
-﻿using DataAccessAPI.Infrastructure.Persistence;
-using Microsoft.Extensions.Diagnostics.HealthChecks;
+﻿using Microsoft.Extensions.Diagnostics.HealthChecks;
 
 namespace DataAccessAPI.Api.Configuration;
 
